@@ -14,40 +14,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="../IMG/Riot_Games_logo_icon.png">
     <title>LOL STORE | TIENDA DE PRODUCTOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!--HEADER-->
     <header class="header">
-        <nav class="nav">
-            <a href="../index.html" class="title-logo"><img src="../IMG/logo.png" alt="Logo" class="logo"></a>
-            <div class="container_nav">
-                <ul>
-                    <li><a href="../HTML/figuras.html">FIGURAS</a></li>
-                    <li><a href="../HTML/vestimenta.html">VESTIMENTA</a></li>
-                    <li><a href="../HTML/Accesorios.html">ACCESORIOS</a></li>
-                    <li><a href="contacto.html">REGISTRARSE</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a href="../index.html"><img src="../IMG/logo.png" alt="Logo" width="100px" class="logo-img"></a>
+            <button class="border border-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white link-warning" aria-current="page" href="./figuras.html">Figuras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white link-warning" href="./vestimenta.html">Vestimenta</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Accesorios.html" class="nav-link text-white link-warning">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contacto.html" class="nav-link text-white link-warning">Registrarse</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Carrito</button>
+              </form>
             </div>
-            <div class="dropdown">
-                <img src="../IMG/icono-menu.png" alt="dropdown" style="width: 50px">
-                <ul>
-                    <li><a href="../HTML/figuras.html">FIGURAS</a></li>
-                    <li><a href="../HTML/vestimenta.html">VESTIMENTA</a></li>
-                    <li><a href="../    HTML/Accesorios.html">ACCESORIOS</a></li>
-                    <li><a href="contacto.html">REGISTRARSE</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><input type="search" name="search" id="" placeholder=" Buscar..."></li>
-                </ul>
-            </div>
-            <div class="search-nav">
-                <input type="search" name="search" id="" placeholder=" Buscar...">
-            </div>
-            <div class="logo-carrito">
-                <img src="../IMG/carrito-logo.png" alt="Logo carrito">
-            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main id="main-contacto">
         <div class="form-content">
             <div class="form-register">
@@ -67,5 +69,10 @@
             </div>
         </div>
     </main>
+
+          <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
 </body>
 </html>
