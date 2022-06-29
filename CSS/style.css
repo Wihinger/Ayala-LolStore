@@ -6,77 +6,31 @@
     list-style: none;
     box-sizing: border-box;
 }
-.header {
-    position: fixed;
-    top: 0; 
-    width: 100%;
-}
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-image: linear-gradient(to left, #781703  , black 45%);
-    width: 100%;
-    gap: 60px;
-    height: 80px;
-}
-.title-logo img{
-    width: 100px;
-    justify-content: right;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 15px;
-}
-.container_nav ul {
-    margin-top: 20px;
-}
-.container_nav li{
-    display: inline;
-    padding: 15px;
-    font-size: 20px;
-}
-.container_nav a {
-    color: white;
-    font-family: monospace;
-    transition: color 0.5s;
-}
-.search-nav{
-    margin-top: 25px;
-}
-.search-nav input {
-    padding: 0 70px 0 70px;
-}
-.logo-carrito{
-    margin-top: 15px;
-}
-.logo-carrito img{
-    width: 50px;
-}
-.register-nav {
-    margin-top: 23px;
-}
-.register-nav a{
-    font-size: 25px;
-    font-family: monospace;
-    color: white;
-}
-/*HOOVERS DEL HEADER*/
-.container_nav a:hover{
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 31px;
+.nav-link {
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
-/*--------------------------------*/
-/*BACKGROUND BANNER*/
-.banner-principal {
-    background-image: url(../IMG/Background-1.jpeg);
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    height: 400px;
-    margin-top: 80px;
-    margin-bottom: 30px;
+.container-fluid img {
+    margin-right: 17px;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 40px;
+}
+.carousel-caption h4{
+    color: white;
+    text-shadow: 2px 2px #222;
+    font-size: 30px;
+}
+.carousel-caption p{
+    color: white;
+    text-shadow: 2px 2px #222;
+    
 }
 /*------------------------*/
 .section-title{
@@ -718,4 +672,18 @@
         
     }
 }
-
+@media (max-width:991px){
+    .carousel-caption h4,
+                      p{
+        display: none;
+    }
+}
+@media (max-width:991px){
+    .carousel-caption button{
+        display: none;
+    }
+    .carousel-caption{
+        border-radius: 0px;
+        background-color: transparent;
+    }
+}
