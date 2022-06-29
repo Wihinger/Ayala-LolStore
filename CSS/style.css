@@ -81,7 +81,9 @@
     border-color: #dc3545;
     border-radius: 10px;
     padding: 6px;
+    text-decoration: none;
     transition: background-color 0.5s;
+
 }
 /*HOOVERS DE LA CARD*/
 .img-card img:hover{
