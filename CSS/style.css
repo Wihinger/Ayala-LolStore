@@ -87,7 +87,7 @@
 }
 /*HOOVERS DE LA CARD*/
 .img-card img:hover{
-    width: 250px;
+    width: 220px;
 }
 .btn-card:hover {
     background-color: #a72a36;
@@ -684,5 +684,11 @@
     .carousel-caption{
         border-radius: 0px;
         background-color: transparent;
+    }
+}
+@media (max-width:275px){
+    .img-card img {
+        width: 150px;
+        transition: all 0.5s;
     }
 }
