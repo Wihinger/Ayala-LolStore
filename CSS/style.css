@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -35,9 +35,14 @@
     grid-template-columns: 100%;
     grid-template-rows: 50px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.section-title h2{
+    font-size: 50px;
+    color: black;
+    
+
 }
 .img-card img {
     width: 200px;
@@ -227,7 +232,7 @@ i{margin: 30px;}
 }
 .img-card-valorant img{
     width: 550px;
-    height: 600px;
+    height: 550px;
     transition: all 0.5s;
 }
 .card-valorant {
@@ -259,7 +264,7 @@ i{margin: 30px;}
 }
 .img-card-valorant img:hover{
     width: 650px;
-    height: 700px;
+    height: 650px;
 }
 .btn-card-figuras:hover {
     background-color: #a72a36;
@@ -561,51 +566,51 @@ i{margin: 30px;}
 {
     .img-card-valorant img{
         width: 450px;
-        height: 500px;
+        height: 450px;
     }
     .img-card-valorant img:hover{
         width: 500px;
-        height: 600px;
+        height: 500px;
     }
 }
 @media (max-width:572px)
 {
     .img-card-valorant img{
         width: 350px;
-        height: 400px;
+        height: 350px;
     }
     .img-card-valorant img:hover{
         width: 400px;
-        height: 500px;
+        height: 400px;
     }
 }
 @media (max-width:480px)
 {
     .img-card-valorant img{
         width: 250px;
-        height: 300px;
+        height: 250px;
     }
     .img-card-valorant img:hover{
         width: 300px;
-        height: 400px;
+        height: 300px;
     }
 }
 @media (max-width:700px)
 {
     .img-card-valorant img{
         width: 150px;
-        height: 200px;
+        height:150px;
     }
     .img-card-valorant img:hover{
         width: 200px;
-        height: 300px;
+        height: 200px;
     }
 }
 @media (max-width:399px)
 {
     .form-register{
         position: relative;
-        top: 150px;
+        top: 0px;
         width: 300px;
         background-color: #24303c;
         padding: 30px;
@@ -618,10 +623,9 @@ i{margin: 30px;}
 {
     .form-register{
         position: relative;
-        top: 150px;
+        top: 0px;
         width: 200px;
         background-color: #24303c;
-        padding: 30px;
         margin: auto;
         border-radius: 4px;
         color: white;
@@ -631,6 +635,7 @@ i{margin: 30px;}
         text-align: center;
         
     }
+
 }
 @media (max-width:991px){
     .carousel-caption h4{
