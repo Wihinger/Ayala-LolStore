@@ -127,9 +127,9 @@
 .title-new-products h2{
     padding-top: 30px;
     padding-bottom: 10px;
-    font-size: 45px;
+    font-size: 75px;
     padding-bottom: 20px;
-    color: #252525;
+    color: black;
 }
 .text-new-products p{
     padding-left: 10px;
@@ -151,6 +151,7 @@
 .btn-new-products{
     text-decoration: none;
 }
+
 .btn-new-products:hover {
     background-color: #83000d;
     color: white;
@@ -673,4 +674,14 @@ i {
     
     width: 5px;
     margin-left: 40px;
+}
+@media (max-width:330px){
+    .section-title h2{
+        font-size: 40px;
+    }
+}
+@media (max-width:260px){
+    .section-title h2{
+        font-size: 35px;
+    }
 }
