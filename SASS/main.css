@@ -1,0 +1,100 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.container-fluid img {
+  margin-right: 17px;
+}
+
+#main-contacto {
+  background-image: url(../IMG/BACKGROUND-CON.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+#main-contacto .form-content {
+  display: grid;
+  align-content: center;
+  height: 100%;
+}
+#main-contacto .form-content .form-register {
+  top: 150px;
+  width: 400px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
+  color: white;
+}
+#main-contacto .form-content .form-register h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#main-contacto .form-content .form-register .controls {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #1f53c5;
+  margin-left: -10px;
+}
+#main-contacto .form-content .form-register p {
+  height: 40px;
+  text-align: center;
+}
+#main-contacto .form-content .form-register p input {
+  margin-right: 10px;
+}
+#main-contacto .form-content .form-register button {
+  width: 100%;
+  border: none;
+  background-color: #1f53c5;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+#main-contacto .form-content .form-register button:hover {
+  background-color: #1d459b;
+}
+
+@media (min-width: 100px) {
+  body {
+    contain: content;
+  }
+}
+@media (max-width: 399px) {
+  .form-register {
+    position: relative;
+    top: 0px;
+    width: 300px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+  }
+}
+@media (max-width: 299px) {
+  .form-register {
+    position: relative;
+    top: 0px;
+    width: 200px;
+    background-color: #24303c;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .form-register p {
+    height: 70px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
