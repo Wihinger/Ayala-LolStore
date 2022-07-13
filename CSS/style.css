@@ -92,6 +92,7 @@
 /*HOOVERS DE LA CARD*/
 .img-card img:hover{
     width: 220px;
+    cursor: pointer;
 }
 .btn-card:hover {
     background-color: #a72a36;
@@ -134,6 +135,8 @@
     padding-left: 10px;
     text-align: center;
     font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;
 }
 .new-products a{
     width: 70px;
@@ -210,6 +213,9 @@
     margin-top: 10px;
 }
 i{margin: 30px;}
+.banner-estirado img {
+    margin-top: 55px;
+}
 
 
 
@@ -307,7 +313,7 @@ i{margin: 30px;}
 .form-register{
     top: 150px;
     width: 400px;
-    background-color: #24303c;
+    background:linear-gradient(56deg, rgba(0, 68, 204, 0.600) 46%, rgba(0, 178, 187, 0.400) 100%);;
     padding: 30px;
     margin: auto;
     border-radius: 4px;
@@ -321,12 +327,17 @@ i{margin: 30px;}
 }
 .controls {
     width: 100%;
-    background-color: #24303c;
+    background:rgba(0, 68, 204, 0.250);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 15px;
     border: 1px solid #1f53c5;
     margin-left: -10px;
+    
+}
+.controls::placeholder{
+    color: white;
+    text-shadow: #181818 1px 2px;
 }
 .form-register p {
     height: 40px;
@@ -339,13 +350,17 @@ i{margin: 30px;}
 .form-register button {
     width: 100%;
     border: none;
-    background-color: #1f53c5;
+    background: linear-gradient(56deg, rgba(0,57,173,1) 71%, rgba(0,146,153,1) 100%);
     padding: 12px;
     margin: 16px 0;
     font-size: 16px;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
     transition: background-color 0.5s;
+}
+.title-form {
+    text-shadow: 1px 2px #181818;
 }
 .form-register button:hover {
     background-color: #1d459b;
@@ -612,7 +627,7 @@ i{margin: 30px;}
         position: relative;
         top: 0px;
         width: 300px;
-        background-color: #24303c;
+        background:linear-gradient(56deg, rgba(0, 68, 204, 0.600) 46%, rgba(0, 178, 187, 0.400) 100%);;
         padding: 30px;
         margin: auto;
         border-radius: 4px;
@@ -624,8 +639,8 @@ i{margin: 30px;}
     .form-register{
         position: relative;
         top: 0px;
-        width: 200px;
-        background-color: #24303c;
+        width: 240px;
+        background:linear-gradient(56deg, rgba(0, 68, 204, 0.600) 46%, rgba(0, 178, 187, 0.400) 100%);;
         margin: auto;
         border-radius: 4px;
         color: white;
@@ -682,5 +697,10 @@ i {
 @media (max-width:260px){
     .section-title h2{
         font-size: 35px;
+    }
+}
+@media (max-width: 300px) {
+    .text-new-products p{
+        display: none;
     }
 }
