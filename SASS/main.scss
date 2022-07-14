@@ -1,98 +1,42 @@
-@import 'font';
-@import 'toggler';
-.container-fluid img {
-    margin-right: 17px;
+/*MIXIN*/
+@mixin btn-card {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 10px;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.5s;
 }
-#main-contacto {
-    background-image: url(../IMG/BACKGROUND-CON.jpg);
-    height: 100vh;
-    background-size: cover;
-    .form-content {
-        display: grid;
-        align-content: center;
-        height: 100%;
-        .form-register {
-            top: 150px;
-        width: 400px;
-        background-color: #24303c;
-        padding: 30px;
-        margin: auto;
-        border-radius: 4px;
-        color: white;
-        h2 {
-            font-size: 22px;
-        margin-bottom: 20px;
-        text-align: center;
-        }
-        .controls {
-            width: 100%;
-            background-color: #24303c;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            border: 1px solid #1f53c5;
-            margin-left: -10px;
-        }
-        p {
-            height: 40px;
-            text-align: center;
-            input {
-                margin-right: 10px;
-            }
-        }
-        button {
-            width: 100%;
-            border: none;
-            background-color: #1f53c5;
-            padding: 12px;
-            margin: 16px 0;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.5s;
-            &:hover {
-                background-color: #1d459b;
-            }
-        }
-        }
-    }
-
+.btn-card:hover {
+    color: white;
+} 
+.btn-card--primary {
+    @extend btn-card;
+    background-color: #0080FF;
 }
-@media (min-width: 100px)
-{
-    body {
-        contain: content;
-    }
+.btn-card--yellow {
+    @extend btn-card;
+    background-color: #118600;
+    
 }
-@media (max-width:399px)
-{
-    .form-register{
-        position: relative;
-        top: 0px;
-        width: 300px;
-        background-color: #24303c;
-        padding: 30px;
-        margin: auto;
-        border-radius: 4px;
-        color: white;
-    }
+.btn-card--primary:hover {
+    background-color: #0056ac;
+    color: white;
 }
-@media (max-width:299px)
-{
-    .form-register{
-        position: relative;
-        top: 0px;
-        width: 200px;
-        background-color: #24303c;
-        margin: auto;
-        border-radius: 4px;
-        color: white;
-    }
-    .form-register p {
-        height: 70px;
-        text-align: center;
-        
-    }
-
+.btn-card--yellow:hover {
+    background-color: #0e6800;
+    color: white;
+}
+/*MAP*/
+$formulario: (
+    form: linear-gradient(56deg, rgba(0, 68, 204, 0.300) 46%, rgba(56, 165, 255, 0.3) 100%),
+    controls: rgba(0, 68, 204, 0.150)
+);
+.controls {
+    background-color: map-get($formulario, controls);
+}
+.form-register {
+    background: map-get($formulario, form);
 }
 

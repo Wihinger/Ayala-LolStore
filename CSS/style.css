@@ -313,7 +313,7 @@ i{margin: 30px;}
 .form-register{
     top: 150px;
     width: 400px;
-    background:linear-gradient(56deg, rgba(0, 68, 204, 0.600) 46%, rgba(0, 178, 187, 0.400) 100%);;
+    border: 1px solid #181818;
     padding: 30px;
     margin: auto;
     border-radius: 4px;
@@ -327,11 +327,10 @@ i{margin: 30px;}
 }
 .controls {
     width: 100%;
-    background:rgba(0, 68, 204, 0.250);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 15px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #181818;
     margin-left: -10px;
     
 }
