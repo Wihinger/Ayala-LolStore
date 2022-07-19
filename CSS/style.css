@@ -203,7 +203,7 @@
 .sub-footer{
     display: grid;
     justify-content: center;
-    border-top: 1px dashed white;
+    border-top: 1px solid white;
     background-color: #181818;
     color: white;
 }
@@ -385,8 +385,6 @@ i{margin: 30px;}
 .arrow i{
     margin-right:35px;
 }
-
-
 
 
 
